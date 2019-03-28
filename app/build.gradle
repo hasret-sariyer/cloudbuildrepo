@@ -18,6 +18,17 @@ android {
         letsee{
 
         }
+
+        letsee1{
+
+        }
+    }
+
+    flavorDimensions "branch"
+    productFlavors {
+        emulator {
+            dimension "branch"
+        }
     }
 }
 
