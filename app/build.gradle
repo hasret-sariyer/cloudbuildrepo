@@ -16,30 +16,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        letsee{
-
-        }
-
-        letsee1{
-
-        }
-    }
-
-    flavorDimensions "one" ,"two"
-    productFlavors {
-        emulator {
-            dimension "one"
-        }
-        emulatortest {
-            dimension "one"
-        }
-
-        kesbe {
-            dimension "two"
-        }
-        kesbe2 {
-            dimension "two"
-        }
     }
 }
 
