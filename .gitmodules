@@ -1,0 +1,3 @@
+[submodule "assetdubai"]
+	path = assetdubai
+	url = https://github.com/muhammedyalcin/assetdubai.git
