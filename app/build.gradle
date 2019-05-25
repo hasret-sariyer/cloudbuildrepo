@@ -21,6 +21,17 @@ android {
         anotherTest{}
 
     }
+
+    flavorDimensions "version"
+    productFlavors {
+        admin {
+            dimension "version"
+        }
+
+        customer {
+            dimension "version"
+        }
+    }
 }
 
 dependencies {
