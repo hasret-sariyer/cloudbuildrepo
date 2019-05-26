@@ -19,10 +19,9 @@ android {
 
         anotherDeneme{}
         anotherTest{}
-
     }
 
-    flavorDimensions "version"
+    flavorDimensions  "api", "version"
     productFlavors {
         admin {
             dimension "version"
@@ -30,6 +29,18 @@ android {
 
         customer {
             dimension "version"
+        }
+
+        minApi24 {
+            dimension "api"
+        }
+
+        minApi23 {
+            dimension "api"
+        }
+
+        minApi21 {
+            dimension "api"
         }
     }
 }
