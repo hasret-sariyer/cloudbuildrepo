@@ -1,1 +1,5 @@
 include ':app'
+project(':app').projectDir = new File('./app')
+
+include ':app2'
+project(':app2').projectDir = new File('./folder/app2')

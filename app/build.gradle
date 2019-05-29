@@ -11,15 +11,31 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
 
-        anotherDeneme{}
-        anotherTest{}
+    signingConfigs {
+        release {
+            // We can leave these in environment variables
+            storeFile file("/Users/hasretsariyer/Desktop/sample.keystore")
+            keyAlias "key0"
+
+            // These two lines make gradle believe that the signingConfigs
+            // section is complete. Without them, tasks like installRelease
+            // will not be available!
+            storePassword "123456"
+            keyPassword "key0pass"
+        }
     }
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+////            signingConfig signingConfigs.release
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+////        anotherDeneme{}
+////        anotherTest{}
+//    }
 
     flavorDimensions  "api", "version"
     productFlavors {
