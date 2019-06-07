@@ -1,1 +1,5 @@
-echo "Say something!"
+function saySomething() {
+	echo "Say something!"
+}
+
+saySomething
