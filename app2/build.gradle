@@ -43,7 +43,6 @@ android {
 
             // Specifies a list of ABIs that Gradle should create APKs for.
             include "x86", "x86_64"
-            universalApk true
         }
     }
     buildTypes {
