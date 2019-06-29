@@ -13,6 +13,12 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
+    bundle {
+        abi {
+            // This property is set to true by default.
+            enableSplit = true
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
