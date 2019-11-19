@@ -20,6 +20,6 @@ jobs:
       with:
         java-version: 1.8
     - name: custom script
-      run: echo "Hi from github actions!"
+      run: whoami
     - name: Build with Gradle
       run: ./gradlew app:assembleminapi23admindebug
