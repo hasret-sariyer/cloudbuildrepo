@@ -19,6 +19,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Print env variable
+      env:
+        FIRST_NAME: hasret
+        LAST_NAME: sariyer
+      run: |
+        echo $FIRST_NAME $LAST_NAME.
     - name: custom script
       run: whoami
     - name: Build with Gradle
