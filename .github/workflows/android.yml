@@ -15,14 +15,3 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Download artifact
-    uses: actions/download-artifact@v1.0.0
-    with:
-      # Artifact name
-      name: # optional
-      # Destination path
-      path: # optional
-      # artifact source
-      source: # optional, default is current
-  - name: Black Code Formatter
-  uses: lgeiger/black-action@v1.0.1
