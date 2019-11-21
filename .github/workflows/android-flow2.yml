@@ -2,6 +2,8 @@ name: Android CI
 
 on: 
   push:
+    paths:
+     - 'app/**'
     branches:
     - master
   pull_request:
@@ -10,7 +12,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
