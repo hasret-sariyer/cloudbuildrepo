@@ -26,6 +26,7 @@ jobs:
         LAST_NAME: sariyer
       run: |
         echo $FIRST_NAME $LAST_NAME.
+        echo ${{ secrets.MY_SECRET_KEY }}
     - name: custom script
       run: whoami
     - name: Build with Gradle
