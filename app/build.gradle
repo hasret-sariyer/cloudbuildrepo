@@ -34,19 +34,11 @@ android {
         minApi24 {
             dimension "api"
         }
-
-        minApi23 {
-            dimension "api"
-        }
-
-        minApi21 {
-            dimension "api"
-        }
     }
 
     applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "../../..//app.apk"
+            outputFileName = "../../../../../" + variant.name + ".apk"
         }
     }
 }
