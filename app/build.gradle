@@ -38,7 +38,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "../../../../../" + variant.name + ".apk"
+            outputFileName = "../../../../../../../" + variant.name + ".apk"
         }
     }
 }
