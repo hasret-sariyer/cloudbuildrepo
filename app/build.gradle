@@ -35,12 +35,6 @@ android {
             dimension "api"
         }
     }
-
-    applicationVariants.all { variant ->
-        variant.outputs.all {
-            outputFileName = "../../../../../" + variant.name + ".apk"
-        }
-    }
 }
 
 dependencies {
