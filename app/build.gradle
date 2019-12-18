@@ -16,18 +16,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-
-        anotherDeneme{}
         anotherTest{}
     }
 
     flavorDimensions  "api", "version"
     productFlavors {
         admin {
-            dimension "version"
-        }
-
-        customer {
             dimension "version"
         }
 
