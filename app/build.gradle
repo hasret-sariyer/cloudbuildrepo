@@ -19,14 +19,14 @@ android {
         anotherTest{}
     }
 
-    flavorDimensions  "api", "version"
+    flavorDimensions "version"
     productFlavors {
         admin {
             dimension "version"
         }
-
-        minApi24 {
-            dimension "api"
+        
+        customer {
+            dimension "version"
         }
     }
 }
