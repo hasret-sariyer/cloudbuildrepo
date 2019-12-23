@@ -17,13 +17,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         anotherTest{}
-        applicationVariants.all { variant ->
-            variant.outputs.all {
-                // Naming will be in this order: FLAVOR-DIMENSION-BUILD_TYPE
-                // Example: emulator-alpha-debug
-                outputFileName = "unsigned-unsignedunsigned-${variant.productFlavors[0].name}-aaa-${variant.buildType.name}.apk"
-            }
-        }
     }
 
     flavorDimensions "version"
