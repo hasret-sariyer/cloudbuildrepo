@@ -1,2 +1,2 @@
 ls $ANDROID_HOME
-rm -rf $ANDROID_HOME
+# rm -rf $ANDROID_HOME
