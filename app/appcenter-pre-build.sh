@@ -4,3 +4,6 @@ ls $ANDROID_HOME/platforms
 echo "Pre-build custom script1"
 
 # rm -rf $ANDROID_HOME
+echo "====================================="
+pwd
+echo "====================================="
