@@ -6,7 +6,7 @@ echo "Pre-build custom script1..."
 cd $ANDROID_HOME
 ls
 echo "======= ANDROID_HOME size ======="
-du -sh $ANDROID_HOME
+du -sh $ANDROID_HOME/*
 
 # rm -rf $ANDROID_HOME
 echo "====================================="
