@@ -38,10 +38,6 @@ android {
         minApi23 {
             dimension "api"
         }
-
-        minApi21 {
-            dimension "api"
-        }
     }
 }
 
