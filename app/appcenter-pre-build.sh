@@ -16,3 +16,5 @@ echo "====================================="
 echo "Current working directory: "
 echo $(pwd)
 echo "====================================="
+
+exit -1
