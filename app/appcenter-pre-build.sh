@@ -1,3 +1,5 @@
+set -x
+set -e
 
 touch $ANDROID_HOME/hasret-test.txt
 ls $ANDROID_HOME/platforms
@@ -16,5 +18,7 @@ echo "====================================="
 echo "Current working directory: "
 echo $(pwd)
 echo "====================================="
+
+asdf
 
 exit -1
